@@ -25,9 +25,12 @@
 </head>
 <body>
 {{>header}}
-<h1 style="text-align: center">Welcome to {{capitalise site_name}}</h1>
-<hr/>
-<p>This is a paragraph</p>
+<div class="jumbotron container" style="text-align: center">
+    <h3>Heading {{site_name}}</h3>
+    <a>This is a new paragraph text area</a>
+    <button type=button class="btn btn-sm btn-success">Go for it</button>
+    <button type=button class="btn btn-sm btn-warning">Do it later</button>
+</div>
 {{>footer}}
 </body>
 </html>

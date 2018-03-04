@@ -18,6 +18,9 @@ app.get('/', (req, res) => {
     res.render('index.hbs', {site_name: 'express trial'});
 });
 
+app.get('/weather', (req, res) => {
+    res.render('weather.hbs', {site_name: 'express trial'});
+});
 app.listen(port, () => {
     console.log('Server started listening on ', port);
 });
