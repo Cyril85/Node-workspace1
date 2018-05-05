@@ -15,7 +15,7 @@ hbs.registerHelper('capitalise', (text) => {
 //app.use((req,res,next)=>{ res.send('Under maintenance')});
 
 app.get('/', (req, res) => {
-    res.render('index.hbs', {site_name: 'express trial'});
+    res.status(200).render('index.hbs', {site_name: 'express trial'});
 });
 
 app.get('/weather', (req, res) => {
@@ -24,3 +24,5 @@ app.get('/weather', (req, res) => {
 app.listen(port, () => {
     console.log('Server started listening on ', port);
 });
+
+module.exports.app=app;
